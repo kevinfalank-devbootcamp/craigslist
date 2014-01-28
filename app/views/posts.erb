@@ -1,0 +1,8 @@
+<div id = "posts">
+<ul>
+  <% @posts.each { |post| %>
+    <li><a href="/single_post/<%=post.id%>" ><%=post.name%></a></li>
+  <%}%>
+</ul>
+    <a href ="/create/<%=@category_id%>">Create new post!</a>
+</div>

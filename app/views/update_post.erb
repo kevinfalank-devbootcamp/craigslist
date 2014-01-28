@@ -1,0 +1,12 @@
+<div id = 'update_post'>
+  <h1>Update Post</h1>
+  <form action='/update' method='post'>
+   Name <input type = 'text' name = 'name' value='<%=@post.name%>' >
+   Price <input type = 'text' name = 'price' value='<%=@post.price%>'>
+   Email <input type = 'text' name = 'email' value='<%=@post.email%>'>
+   Description <input type = 'text' name = 'description' value='<%=@post.description%>'>
+   <input type = 'hidden' name = 'category_id' value='<%=@post.category_id%>'>
+   <input type = 'hidden' name = 'id' value='<%=@id%>'>
+   <input type = 'submit' name = 'update'>
+  </form>
+</div>
